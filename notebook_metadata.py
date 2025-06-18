@@ -21,6 +21,6 @@ def process_notebooks(directory="."):
 
     for path in directory_path.rglob("*.ipynb"):
         metadata = extract_notebook_metadata(path)
-        if metadata:
-            print(f"\nMetadata for: {path}")
-            print(json.dumps(metadata, indent=2))
+        with open('metadata.json', 'w') as outfile:
+            json.dump(metadata, outfile)
+

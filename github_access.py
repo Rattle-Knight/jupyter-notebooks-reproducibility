@@ -17,8 +17,6 @@ def download_github_files(repo_name, branch="main", local_dir="./", token=None):
 
 
 def download_recursive(contents_list, repo, branch, local_dir):
-    if not isinstance(contents_list, list):
-        contents_list = [contents_list]
 
     for content_file in contents_list:
 
