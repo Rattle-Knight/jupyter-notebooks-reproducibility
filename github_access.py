@@ -1,7 +1,6 @@
 import os
 import urllib.request
 from github import Github
-import config
 
 def download_github_files(repo_name, branch="main", local_dir="./", token=None):
     if token:
@@ -41,10 +40,5 @@ def download_recursive(contents_list, repo, branch, local_dir):
                 print(f"Failed to download {content_file.path}: {e}")
 
 
-if __name__ == "__main__":
-    download_github_files(
-        repo_name=config.REPO_NAME,
-        branch=config.BRANCH,
-        local_dir=config.DIR,
-        token=config.ACCESS_TOKEN  
-    )
+
+    
