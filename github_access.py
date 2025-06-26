@@ -33,9 +33,9 @@ def download_recursive(contents_list, repo, branch, local_dir):
             
             try:
                 urllib.request.urlretrieve(content_file.download_url, save_path)
-                print(f"Downloaded: {save_path}")
+
             except Exception as e:
-                print(f"Failed to download {content_file.path}: {e}")
+                continue
 
 
 
