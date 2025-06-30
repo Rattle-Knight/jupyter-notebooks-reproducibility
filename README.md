@@ -9,7 +9,7 @@ This tool will:
  - first download a given notebook off of Github given its identifier, 
  - then it will perform several checks to produce a metadata json file
  - it will then take the Requirments.txt file that has the dependancies of the notebook, setting up a conda env with it
- - then it will run the notebook, colleting errors on cells which fail.
+ - then it will run the notebook, collecting errors on cells which fail.
  
 ## Requirements
 - Python3
@@ -34,7 +34,7 @@ DIR = "DOWNLOAD DIRECTORY"
 ```
 Add the path to your "\condabin\conda.bat" file here
 ```
-CONDA_DIR = "YOUR CONDA INSTALLATION PATH"
+CONDA_DIR = "YOUR CONDA.BAT INSTALLATION PATH"
 ```
 
 
