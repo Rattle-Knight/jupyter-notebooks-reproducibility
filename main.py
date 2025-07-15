@@ -2,6 +2,7 @@ import config
 import github_access
 import notebook_metadata
 import conda_setup
+import notebook_run
 
 
 if __name__ == "__main__":
@@ -11,16 +12,26 @@ if __name__ == "__main__":
         local_dir=config.DIR,
         token=config.ACCESS_TOKEN  
     )
-    notebook_metadata.process_notebooks(
-        config.DIR
-        ) 
+    #notebook_metadata.process_notebooks(
+    #    config.DIR
+    #    ) 
+
+    ENV_NAME = config.REPO_NAME.replace("/","_")
+
     conda_setup.create_conda_env(
-        env_name = config.REPO_NAME.replace("/","_"),
+        env_name = ENV_NAME,
         requirements_path = config.DIR + "/requirements.txt",
         conda_path = config.CONDA_DIR
+        )
+
+    notebook_run.access_notebook(
+        config.DIR,
+        ENV_NAME,
+        config.CONDA_DIR,
         )
 
     ## 3 include system specs
     ## 2 running full notebook 
     ### report on cells that fail
+    ## backtest everything so far
     

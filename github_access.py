@@ -3,6 +3,7 @@ import urllib.request
 from github import Github
 
 def download_github_files(repo_name, branch="main", local_dir="./", token=None):
+    print("[0] accessing github")
     if token:
         git = Github(token)
     else:
@@ -14,6 +15,7 @@ def download_github_files(repo_name, branch="main", local_dir="./", token=None):
 
 
     download_recursive(contents, repo, branch, local_dir)
+    print("[1] downloaded files")
 
 
 def download_recursive(contents_list, repo, branch, local_dir):
