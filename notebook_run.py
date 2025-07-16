@@ -12,7 +12,7 @@ def access_notebook(notebookdir,env_name,conda_path):
     print("[4] running notebook")
 
     # this runs the notebook before the reporting
-    result = subprocess.run([
+    result = command([
         conda_path, "run", "-n", env_name,
         "jupyter", "nbconvert",
         "--to", "notebook",
