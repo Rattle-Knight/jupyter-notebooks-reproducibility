@@ -1,4 +1,5 @@
 __pycache__/
 git_repo_downloads/
 .vs/
-notebook_report
+notebook_report.json
+
