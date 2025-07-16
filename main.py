@@ -3,6 +3,7 @@ import github_access
 import notebook_metadata
 import conda_setup
 import notebook_run
+import reporter
 
 
 if __name__ == "__main__":
@@ -28,6 +29,10 @@ if __name__ == "__main__":
         config.DIR,
         ENV_NAME,
         config.CONDA_DIR,
+        )
+
+    reporter.generate_notebook_report(
+        config.DIR
         )
 
     ## 3 include system specs
