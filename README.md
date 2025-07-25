@@ -19,7 +19,7 @@ This tool will:
 - nbformat
 
 ## Config
-To run theis tool you will need to setup the config.py file as such
+To run this tool you will need to setup the config.py file as such
 add your Github personal access token here
 ```
 ACCESS_TOKEN = "YOUR GITHUB ACCESS TOKEN"
