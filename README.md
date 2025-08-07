@@ -29,10 +29,8 @@ Add your Github repository and branch here
 REPO_NAME = "REPO YOU WOULD LIKE TO ASSESS"
 BRANCH = "BRANCH NAME ON GITHUB"
 ```
-Add your directory to download the notebook into here
-```
-DIR = "DOWNLOAD DIRECTORY"
-```
+
+
 Add the path to your "\condabin\conda.bat" file here
 ```
 CONDA_DIR = "YOUR CONDA.BAT INSTALLATION PATH"
