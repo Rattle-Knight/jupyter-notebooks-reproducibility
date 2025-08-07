@@ -1,4 +1,7 @@
 __pycache__/
-
+git_repo_downloads/
+outputs/
 .vs/
+notebook_report.json
+metadata.json
 
