@@ -2,12 +2,16 @@ import os
 import sys
 import config
 import json
+import reporter
 
 
 
 def create_conda_env(env_name, requirements_path,conda_path):
+
     if not os.path.isfile(requirements_path):
-        print(f"Error: {requirements_path} not found.")
+        error = f"Error: {requirements_path} not found."
+        print(error)
+        reporter.report_errors(error)
         sys.exit(1)
 
     with open(os.path.join(config.OUTPUT_DIR, "metadata.json"), "r", encoding="utf-8") as f:

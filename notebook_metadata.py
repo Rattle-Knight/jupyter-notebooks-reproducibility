@@ -20,7 +20,6 @@ def process_notebooks(directory="."):
     config.stage = "[2] accessing kernel info"
     print(config.stage)
 
-
     if not directory_path.is_dir():
         print(f"The path {directory} is not a directory.")
         return
@@ -28,16 +27,13 @@ def process_notebooks(directory="."):
     for path in directory_path.rglob("*.ipynb"):
         metadata = extract_notebook_metadata(path)
 
-
         if metadata is not None:
-
             # Extract only the relevant keys for env creation
             filtered_metadata = {
                 "kernelspec": metadata.get("kernelspec", {}),
                 "language_info": metadata.get("language_info", {})
             }
 
-           
             with open(os.path.join(config.OUTPUT_DIR, "metadata.json"), 'w', encoding='utf-8') as outfile:
                 json.dump(filtered_metadata, outfile, indent=2)
 

@@ -17,7 +17,7 @@ def report_errors(error):
     with open(os.path.join(config.OUTPUT_DIR, "notebook_report.json"), "w", encoding="utf-8") as f:
         json.dump(error_info, f, indent=2)
 
-    print(f" Notebook report written to: {report_output_path}")
+    print(f" Notebook report written to: {config.OUTPUT_DIR}")
 
 def generate_full_notebook_report(notebook_dir):
 
