@@ -29,13 +29,17 @@ Add your Github repository and branch here
 REPO_NAME = "REPO YOU WOULD LIKE TO ASSESS"
 BRANCH = "BRANCH NAME ON GITHUB"
 ```
-Add your directory to download the notebook into here
-```
-DIR = "DOWNLOAD DIRECTORY"
-```
+
+
 Add the path to your "\condabin\conda.bat" file here
 ```
 CONDA_DIR = "YOUR CONDA.BAT INSTALLATION PATH"
 ```
+
+## Usage
+this tool will run in the terminal and will output 6 key stages of the pipeline.
+
+<img width="1763" height="788" alt="Program Pipeline" src="https://github.com/user-attachments/assets/f0e10abd-7877-446d-927c-445c50115d24" />
+
 
 
