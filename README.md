@@ -41,5 +41,8 @@ This tool will run in the terminal and will output 6 key stages of the pipeline.
 
 <img width="1763" height="788" alt="Program Pipeline" src="https://github.com/user-attachments/assets/f0e10abd-7877-446d-927c-445c50115d24" />
 
+## Output
+A report will be generated as a json file within the outputs folder, 
+this will detail cells that fail after the trial Notebook run has completed.
 
 
