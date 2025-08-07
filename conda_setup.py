@@ -5,12 +5,12 @@ import json
 
 
 
-def create_conda_env(env_name, requirements_path,conda_path,metadata_path = "metadata.json"):
+def create_conda_env(env_name, requirements_path,conda_path):
     if not os.path.isfile(requirements_path):
         print(f"Error: {requirements_path} not found.")
         sys.exit(1)
 
-    with open(metadata_path, "r", encoding="utf-8") as f:
+    with open(os.path.join(config.OUTPUT_DIR, "metadata.json"), "r", encoding="utf-8") as f:
         metadata = json.load(f)
 
     kernelspec = metadata.get("kernelspec", {})
