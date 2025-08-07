@@ -30,7 +30,7 @@ def create_conda_env(env_name, requirements_path,conda_path):
     print(config.stage)
     config.command([conda_path, "create", "--yes", "--name", env_name, str("python="+python_version), "jupyter", "ipykernel"])
 
-    config.stage = "[4] installing packages"
+    config.stage = "[4] installing packages within requirements.txt"
     print(config.stage)
     config.command([conda_path,"activate", env_name], shell=True) #env warmup for first runs
     config.command([conda_path, "run", "--name", env_name, "pip", "install", "-r", requirements_path])
