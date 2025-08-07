@@ -10,7 +10,7 @@ This tool will:
  - then it will perform several checks to produce a metadata json file
  - it will then take the Requirments.txt file that has the dependancies of the notebook, setting up a conda env with it
  - then it will run the notebook, collecting errors on cells which fail.
- - finally a report will be recorded into a json file within a Output Folder
+ - finally a report will be recorded into a json file within an Output Folder
  
 ## Requirements
 - Python3
