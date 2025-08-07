@@ -8,7 +8,7 @@ ACCESS_TOKEN = None
 REPO_NAME = "hughshanahan/CS2900-Lab-4"
 BRANCH = "master"
 DIR = "./git_repo_downloads"
-CONDA_DIR = r"C:\Users\JCARe\anaconda3\condabin\conda.bat"
+CONDA_DIR = r""
 OUTPUT_DIR = "./outputs"
 
 
