@@ -1,6 +1,6 @@
 import subprocess
 import nbformat
-from config import command
+import config 
 from pathlib import Path
 
 
@@ -9,10 +9,11 @@ def access_notebook(notebookdir,env_name,conda_path):
     for path in notedir.rglob("*.ipynb"):
         notebook_path = path
 
-    print("[4] running notebook")
+    config.stage = "[5] Running Notebook"
+    print(config.stage)
 
     # this runs the notebook before the reporting
-    result = command([
+    result = config.command([
         conda_path, "run", "-n", env_name,
         "jupyter", "nbconvert",
         "--to", "notebook",

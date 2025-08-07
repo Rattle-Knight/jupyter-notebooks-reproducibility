@@ -7,15 +7,15 @@ import reporter
 
 
 if __name__ == "__main__":
-    github_access.download_github_files(
-        repo_name=config.REPO_NAME,
-        branch=config.BRANCH,
-        local_dir=config.DIR,
-        token=config.ACCESS_TOKEN  
-    )
-    #notebook_metadata.process_notebooks(
-    #    config.DIR
-    #    ) 
+    #github_access.download_github_files(
+    #    repo_name=config.REPO_NAME,
+    #    branch=config.BRANCH,
+    #    local_dir=config.DIR,
+    #    token=config.ACCESS_TOKEN  
+    #)
+    notebook_metadata.process_notebooks(
+        config.DIR
+        ) 
 
     ENV_NAME = config.REPO_NAME.replace("/","_")
 
@@ -31,12 +31,9 @@ if __name__ == "__main__":
         config.CONDA_DIR,
         )
 
-    reporter.generate_notebook_report(
+    reporter.generate_full_notebook_report(
         config.DIR
         )
 
-    ## 3 include system specs
-    ## 2 running full notebook 
-    ### report on cells that fail
     ## backtest everything so far
     
