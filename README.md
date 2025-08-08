@@ -37,6 +37,8 @@ CONDA_DIR = "YOUR CONDA.BAT INSTALLATION PATH"
 ```
 
 ## Usage
+To Run this tool you must run 	**main.py**
+
 This tool will run in the terminal and will output 6 key stages of the pipeline.
 
 <img width="1763" height="788" alt="Program Pipeline" src="https://github.com/user-attachments/assets/f0e10abd-7877-446d-927c-445c50115d24" />
