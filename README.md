@@ -37,7 +37,7 @@ CONDA_DIR = "YOUR CONDA.BAT INSTALLATION PATH"
 ```
 
 ## Usage
-To Run this tool you must run 	**main.py**
+To Run this tool you must run 	**main.py** after congfiguring **config.py**
 
 This tool will run in the terminal and will output 6 key stages of the pipeline.
 
