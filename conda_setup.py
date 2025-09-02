@@ -26,7 +26,7 @@ def create_conda_env(env_name, requirements_path,conda_path):
     print("python",python_version)
 
 
-    config.stage = "[3] creating enviroment"
+    config.stage = "[3] creating environment"
     print(config.stage)
     config.command([conda_path, "create", "--yes", "--name", env_name, str("python="+python_version), "jupyter", "ipykernel"])
 
