@@ -43,7 +43,8 @@ To run this tool, you must run 	**main.py** after congfiguring **config.py** (di
 
 The tool will run in the terminal, output 6 key stages of the pipeline.
 
-<img width="1763" height="788" alt="Program Pipeline" src="https://github.com/user-attachments/assets/f0e10abd-7877-446d-927c-445c50115d24" />
+<img width="1763" height="788" alt="data flow" src="https://github.com/user-attachments/assets/2e817d96-2ea3-4bd5-9f13-013948c82d19" />
+
 
 ## Output
 A report will be generated as a json file within the Outputs folder.
