@@ -1,5 +1,5 @@
 
-# Reproducibility of Juypter Noebooks
+# Reproducibility of Juypter Notebooks
 
 This project provides a framework for verifying the reproducibility of Jupyter Notebooks. It automates the process of downloading, executing, and analyzing notebooks, ensuring that their results can be consistently reproduced.
 
