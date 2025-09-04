@@ -35,5 +35,5 @@ if __name__ == "__main__":
         config.DIR
         )
 
-    ## backtest everything so far
+   
     
